@@ -214,6 +214,8 @@ void checkEatApple(){
 }
 
 void redrawScore(){
+    move(1, 0);
+    clrtoeol();
     mvprintw(1, 4, "Score: %d", score);
     refresh();
 }
